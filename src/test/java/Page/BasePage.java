@@ -63,7 +63,9 @@ public class BasePage {
 
     public void insertInto(String locatorType, String locator, String text){
         By byType = getByType(locatorType, locator);
-        driver.findElement(byType).sendKeys(text);
+        WebElement el = driver.findElement(byType);
+        el.clear();
+        el.sendKeys(text);
     }
 
     /**

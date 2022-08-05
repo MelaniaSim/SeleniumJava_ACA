@@ -2,7 +2,7 @@ package Utils;
 
 import java.security.SecureRandom;
 
-public class Helpers {
+public class Helper {
 
     public String randomStr(int strLenght){
         String AB = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
